@@ -15,7 +15,7 @@ var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://heroku_tlblr6tb:1ca11j8h4teuja3t8msqsto3e4@ds161475.mlab.com:61475/heroku_tlblr6tb',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'the2handedcodingparsetest',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
+  masterKey: process.env.MASTER_KEY || 'myMasterKey', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://the2handedcodingparsetest.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
